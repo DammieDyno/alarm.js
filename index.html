@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>ALARM</title>
+</head>
+
+<body>
+  <div id="big-div">
+    <div id="small-div">
+      <h2 id="time">00:00:00</h2>
+      <h3>Set Alarm Time</h3>
+      <select id="alarmhours">
+        <option value="" selected hidden>Hour</option>
+      </select>
+      <select id="alarmmins">
+        <option value="" selected hidden>Mins</option>
+      </select>
+      <select id="anti-post">
+        <option value="" selected hidden>AM/PM</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+      <div id="control">
+        <button onclick="set()">Alarm Start</button>
+        <button onclick="stop()">Alarm Stop</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="script.js"></script>
